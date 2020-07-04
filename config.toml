@@ -1,0 +1,218 @@
+baseURL = "http://gavisto.vn/"
+languageCode = "en-us"
+title = "Gavisto demo site by NgDMau"
+theme = "forty"
+googleAnalytics = "..."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "dracula"
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  name = "Gavisto"
+  description = "A non-government organization"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation Section
+  [params.navigation]
+    title = "Gavisto"
+    subtitle = "By NgDMau"
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
+
+    [[params.navigation.links]]
+      name = "Home"
+      url = "#"
+
+    [[params.navigation.links]]
+      name = "Blogs"
+      url = "blogs"
+
+    [[params.navigation.links]]
+      name = "Generic Blog"
+      url = "blogs/ipsum"
+
+    [[params.navigation.links]]
+      name = "Elements"
+      url = "elements.html"
+
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+    [[params.navigation.button1]]
+      name = "Get Started"
+      url = "blogs"
+
+    # Button Style 2
+    [[params.navigation.button2]]
+      name = "Log In"
+      url = "categories"
+
+
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "Hi, welcome to home of Gavisto!"
+    subtitle = "WE PROVIDE THE BEST SERVICES"
+    buttonText = "Get Started"
+
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+    
+    [[params.tiles.showcase]]
+      title = "Technologies"
+      subtitle = "Công nghệ"
+      image = "pic01.jpg"
+      url = "blogs/technologies"
+
+    [[params.tiles.showcase]]
+      title = "Education"
+      subtitle = "Giáo dục"
+      image = "pic02.jpg"
+      url = "blogs/education"
+
+    [[params.tiles.showcase]]
+      title = "Communication"
+      subtitle = "Giao tiếp"
+      image = "pic03.jpg"
+      url = "blogs/communication"
+
+    [[params.tiles.showcase]]
+      title = "Sport"
+      subtitle = "Thể thao"
+      image = "pic04.jpg"
+      url = "blogs/sport"
+
+    [[params.tiles.showcase]]
+      title = "Minimalism"
+      subtitle = "Sự tối giản"
+      image = "pic05.jpg"
+      url = "blogs/minimalism"
+
+    [[params.tiles.showcase]]
+      title = "Love"
+      subtitle = "Tình yêu"
+      image = "pic06.jpg"
+      url = "blogs/love"
+    # You can make more showcases by copy and pasting the code above
+
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "Tuyên ngôn của chúng tôi"
+    subtitle = """Trái đất quay quanh mặt trời và nước biển thì tương tối mặn."""
+    buttonText = "Get Started"
+    url = "blogs"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    # formEmail = "example@domain.com"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    [[params.contact.email]]
+    title = "Email"
+    email = "hotro@gavisto.vn"
+
+    [[params.contact.phone]]
+    title = "Phone"
+    phone = "(+84) 984 420 826"
+
+    [[params.contact.address]]
+    title = "Address"
+    street = "Vong Thi"
+    city = "Hanoi"
+    country = "Vietnam"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Company Name"
+
+    # Uses font awesome icons
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      url= "https://www.twitter.com"
+      label = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      url= "https://www.facebook.com"
+      label = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-instagram"
+      url= "https://www.instagram.com"
+      label = "Instagram"
+    
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://www.github.com"
+      label = "GitHub"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      url= "https://www.linkedin.com"
+      label = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Design: "
+      url= "https://github.com/NgDMau"
+      alt = "NgDMau"
