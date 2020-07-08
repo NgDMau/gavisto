@@ -1,4 +1,4 @@
-baseURL = "http://gavisto.vn/"
+baseURL = "https://gavisto.vn/"
 languageCode = "en-us"
 title = "Gavisto demo site by NgDMau"
 theme = "forty"
